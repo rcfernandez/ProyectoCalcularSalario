@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Programador";
+}
+
+<h2>Programador</h2>
+@using(Html.BeginForm("Programador", "Calculadora"))
+{
+    @Html.Label("Nombre:", new{@for="nombre"});
+    @Html.TextBox("nombre");
+    <br />
+    @Html.Label("Apellido:", new{@for="apellido"});
+    @Html.TextBox("apellido");
+    <br />
+    @Html.Label("Cantidad de horas:", new{@for="cantidad_hora"});
+    @Html.TextBox("cantidad_hora");
+    <br />
+    @Html.Label("Valor de hora:", new{@for="valor_hora"});
+    @Html.TextBox("valor_hora");
+    
+    <br />
+    <input type="submit" value="Calcular sueldo" />
+    
+}
+
+
